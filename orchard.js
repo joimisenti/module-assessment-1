@@ -70,7 +70,7 @@ let galaTotal = 0;
 for (let g = 0; g < galaAcres.length; g++) {
     galaTotal += galaAcres[g];
 }
-console.log(`The total number of acres picked for Gala: ${galaTotal}`)
+console.log(`The total number of acres picked for Gala: ${galaTotal}`);
 
 // Calculate the total acres for Pink with a for-loop that
 // sums the entire week and stores in variable pinkTotal.
@@ -79,13 +79,13 @@ let pinkTotal = 0;
 for (let p = 0; p < pinkAcres.length; p++) {
     pinkTotal += pinkAcres[p];
 }
-console.log(`The total number of acres picked for Pink: ${pinkTotal}`)
+console.log(`The total number of acres picked for Pink: ${pinkTotal}`);
 
 // Now to find total acres sum all the apple variety totals together
 // store in variable totalAcres
 
 let totalAcres = fujiTotal + galaTotal + pinkTotal;
-console.log(`The total number of acres picked for the entire week: ${totalAcres}`)
+console.log(`The total number of acres picked for the entire week: ${totalAcres}`);
 
 // PROBLEM 2
 
@@ -99,9 +99,11 @@ console.log(`The total number of acres picked for the entire week: ${totalAcres}
     Log `averageDailyAcres` to the console.
 */
 
-// CODE HERE
+// To calculate average number of acres picked per day
+// must divide the total acres picked by the number of days (aka 7)
 
-
+let averageDailyAcres = totalAcres / 7;
+console.log(`Average acres picked per day: ${averageDailyAcres}`);
 
 
 
@@ -137,7 +139,20 @@ console.log(`The total number of acres picked for the entire week: ${totalAcres}
 let acresLeft = 174 
 let days = 0
 
-// CODE HERE
+// To make the while loop, the condition is while acresLeft is greater than 0
+// so the loop will continue to run while that condition evaluates to true.
+// While that condition is true, the code block within curly brackets will run.
+// The code block adds 1 to each day of work needed, since any amount of acres
+// remaining will require another day of work.
+// The code block also deducts the average number of acres picked daily from
+// the number of acres left, whose number will be stored as the new acresLeft and
+// compared against the while loop's condition again.
+while (acresLeft > 0) {
+    days += 1;
+    acresLeft = acresLeft - averageDailyAcres;
+}
+
+console.log(`The number of days needed to work: ${days}`);
 
 
 
