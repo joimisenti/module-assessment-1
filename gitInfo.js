@@ -41,7 +41,7 @@ let gitCloneDefinition = "A git command that will clone a repository into a new 
     It should be a string containing your best definition of what 'git status' does.
 */
 
-let gitStatusDefinition = "A command that will report to user details about this repository, which files are being tracked, which are not, if there are changes to commit, and on which branch."
+let gitStatusDefinition = "A command that will report to user details about this repository, such as which files are being tracked, which are not, if there are changes to commit, and on which branch."
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -52,7 +52,7 @@ let gitStatusDefinition = "A command that will report to user details about this
     It should be a string containing the code to add all files.
 */
 
-let gitAddDefinition = "A git command that adds the specified files with our changes to be tracked to the staging area."
+let gitAddDefinition = "A git command that adds the specified files we would like to start tracking with our changes to the staging area."
 let gitAddCode = "git add ."
 
 //////////////////PROBLEM 7////////////////////

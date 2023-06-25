@@ -49,11 +49,43 @@ const pinkPrice = .55
     Log `totalAcres` to the console.
 */
 
-// CODE HERE
+// In order to find the total acres picked for the entire week
+// acres must be totaled for each individual apple variety.
 
+// Calculate the total acres for Fuji with a for-loop that
+// sums the entire week and stores in variable fujiTotal.
+// The for-loop will loop through each value in the array and
+// add all the values together.
 
+let fujiTotal = 0;
+for (let f = 0; f < fujiAcres.length; f++) {
+    fujiTotal += fujiAcres[f];
+}
+console.log(`The total number of acres picked for Fuji: ${fujiTotal}`);
 
+// Calculate the total acres for Gala with a for-loop that
+// sums the entire week and stores in variable galaTotal.
 
+let galaTotal = 0;
+for (let g = 0; g < galaAcres.length; g++) {
+    galaTotal += galaAcres[g];
+}
+console.log(`The total number of acres picked for Gala: ${galaTotal}`)
+
+// Calculate the total acres for Pink with a for-loop that
+// sums the entire week and stores in variable pinkTotal.
+
+let pinkTotal = 0;
+for (let p = 0; p < pinkAcres.length; p++) {
+    pinkTotal += pinkAcres[p];
+}
+console.log(`The total number of acres picked for Pink: ${pinkTotal}`)
+
+// Now to find total acres sum all the apple variety totals together
+// store in variable totalAcres
+
+let totalAcres = fujiTotal + galaTotal + pinkTotal;
+console.log(`The total number of acres picked for the entire week: ${totalAcres}`)
 
 // PROBLEM 2
 
