@@ -9,7 +9,7 @@
     It should be a string containing your best definition of what Git is.
 */
 
-//CODE HERE
+let gitDefinition = "Git is a program that stores a repository of your data in a directory on your local drive in the form of a snapshot, tracking changes and modifications. Git provides a system of maintaining version control for code projects that prevents bugs and loss of progress by being able to access the project's history."
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -17,7 +17,7 @@
     It should be a string containing your best definition of what GitHub is.
 */
 
-//CODE HERE
+let gitHubDefinition = "GitHub is a website where you can upload your local repositories to the online cloud service provided by GitHub to track changes to your code and share them with others."
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -25,7 +25,7 @@
     It should be a string containing your best definition of what 'git init' does.
 */
 
-//CODE HERE
+let gitInitDefinition = "A git command that when entered into the command line terminal initializes a git repository on your local drive in the current directory, which creates a hidden .git folder. Only after first initializing a git repository in a directory will git commands then operate."
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -33,7 +33,7 @@
     It should be a string containing your best definition of what 'git clone' does.
 */
 
-//CODE HERE
+let gitCloneDefinition = "A git command that will clone a repository into a new directory."
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -41,7 +41,7 @@
     It should be a string containing your best definition of what 'git status' does.
 */
 
-//CODE HERE
+let gitStatusDefinition = "A command that will report to user details about this repository, which files are being tracked, which are not, if there are changes to commit, and on which branch."
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -52,7 +52,8 @@
     It should be a string containing the code to add all files.
 */
 
-//CODE HERE
+let gitAddDefinition = "A git command that adds the specified files with our changes to be tracked to the staging area."
+let gitAddCode = "git add ."
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -63,7 +64,8 @@
     It should be a string containing the code to commit using the message "initial commit".
 */
 
-//CODE HERE
+let gitCommitDefinition = "A git command that takes a snapshot of the current state of the directory to record the file changes you've made to the repository. You can add a message to describe the snapshot."
+let gitCommitCode = `git commit -m "initial commit"` 
 
 
 //////////////////PROBLEM 8////////////////////
@@ -72,4 +74,4 @@
     It should be a string containing your best definition of what 'git push' does.
 */
 
-//CODE HERE
+let gitPushDefinition = "A git command that ultimately cements, stores, and updates your snapshot of changes desired for tracking, moving them from the staging area into the repository."
