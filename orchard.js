@@ -293,7 +293,9 @@ console.log(`Pink: ${pinkPounds} pounds`);
     console. 
 */
 
-// CODE HERE
+// In order to find the profit for each apple variety,
+// multiply the variable storing the number of pounds
+// by the variable storing the price per pound.
 
 let fujiProfit = fujiPounds * fujiPrice;
 console.log(`From selling Fuji, you will make $${fujiProfit}`);
@@ -317,4 +319,9 @@ console.log(`From selling Pink, you will make $${pinkProfit}`);
     Log `totalProfit` to the console.
 */
 
-// CODE HERE
+// To find the total profit from selling all the apples
+// sum the profit variables for each apple variety and
+// assign to the new variable totalProfit.
+
+let totalProfit = fujiProfit + galaProfit + pinkProfit;
+console.log(`The total profit from selling all the apples is $${totalProfit}`);
