@@ -147,6 +147,7 @@ let days = 0
 // The code block also deducts the average number of acres picked daily from
 // the number of acres left, whose number will be stored as the new acresLeft and
 // compared against the while loop's condition again.
+
 while (acresLeft > 0) {
     days += 1;
     acresLeft = acresLeft - averageDailyAcres;
@@ -180,15 +181,49 @@ console.log(`The number of days needed to work: ${days}`);
     values to the new arrays.
 */
 
-// CODE HERE
+// Trying option 1: creating fujiTons by slicing fujiAcres
+// to make a copy of the array. By entering no arguments in
+// slice parentheses, the slice defaults to starting at index 0
+// and taking values through to the end of the array.
+// The for loop goes through fujiTons and replaces each value
+// in the array with the original value multiplied by 6.5
+// The multiplication could also be coded as
+// fujiTons[fuji] *= 6.5
 
-// let fujiTons =
-// let galaTons =
-// let pinkTons =
+let fujiTons = fujiAcres.slice();
+console.log(fujiTons);
+for (let fuji = 0; fuji < fujiTons.length; fuji++) {
+    fujiTons[fuji] = fujiTons[fuji] * 6.5;
+}
+console.log(fujiTons);
 
+// Trying option 2: creating galaTons as an empty array
+// Using the push method to add values into the array galaTons
+// as a for loop goes through each value in galaAcres
+// and multiplies that value by 6.5 to then push the result
+// successively into galaTons
 
+let galaTons = [];
+for (let gala = 0; gala < galaAcres.length; gala++) {
+    galaTons.push(galaAcres[gala] * 6.5);
+}
+console.log(galaTons);
 
-
+// Trying option 1 again
+// Using the slice method to make a copy of pinkAcres for pinkTons
+// This time adding explicit arguments to specify that the copy
+// start at index 0 of pinkAcres and proceed until index 7 since
+// the end index is exclusive. In order to capture index 6 (the 7th
+// value in the array), the end index must be increased by 1.
+// A for loop goes through pinkTons and replaces each value with
+// the value multiplied by 6.5
+ 
+let pinkTons = pinkAcres.slice(0, 7);
+console.log(pinkTons);
+for (let pink = 0; pink < pinkTons.length; pink++) {
+    pinkTons[pink] = pinkTons[pink] * 6.5;
+}
+console.log(pinkTons);
 
 
 // PROBLEM 5
