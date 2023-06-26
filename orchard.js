@@ -217,7 +217,7 @@ console.log(galaTons);
 // value in the array), the end index must be increased by 1.
 // A for loop goes through pinkTons and replaces each value with
 // the value multiplied by 6.5
- 
+
 let pinkTons = pinkAcres.slice(0, 7);
 console.log(pinkTons);
 for (let pink = 0; pink < pinkTons.length; pink++) {
@@ -242,11 +242,29 @@ console.log(pinkTons);
     Hint: there are 2000 pounds in a ton.
 */
 
-// CODE HERE 
+let fujiTonsTotal = 0;
+for (f = 0; f < fujiTons.length; f++) {
+    fujiTonsTotal += fujiTons[f];
+} 
+console.log(`The total number of tons of Fuji: ${fujiTonsTotal}`);
+let fujiPounds = fujiTonsTotal * 2000;
+console.log(`Fuji: ${fujiPounds} pounds`);
 
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
+let galaTonsTotal = 0;
+for (g = 0; g < galaTons.length; g++) {
+    galaTonsTotal += galaTons[g];
+}
+console.log(`The total number of tons of Gala: ${galaTonsTotal}`);
+let galaPounds = galaTonsTotal * 2000;
+console.log(`Gala: ${galaPounds} pounds`);
+
+let pinkTonsTotal = 0;
+for (p = 0; p < pinkTons.length; p++) {
+    pinkTonsTotal += pinkTons[p];
+}
+console.log(`The total number of tons of Pink: ${pinkTonsTotal}`);
+let pinkPounds = pinkTonsTotal * 2000;
+console.log(`Pink: ${pinkPounds} pounds`);
 
 
 
