@@ -242,6 +242,12 @@ console.log(pinkTons);
     Hint: there are 2000 pounds in a ton.
 */
 
+// For each apple variety, to calculate the total number of tons,
+// use a for loop to sum all the values in the array. 
+// Assign the total tons to a new variable.
+// Multiply the total tons by 2000 lbs and assign to a new variable.
+// Repeat for each apple variety to find the total number of pounds.
+
 let fujiTonsTotal = 0;
 for (f = 0; f < fujiTons.length; f++) {
     fujiTonsTotal += fujiTons[f];
@@ -289,9 +295,12 @@ console.log(`Pink: ${pinkPounds} pounds`);
 
 // CODE HERE
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
+let fujiProfit = fujiPounds * fujiPrice;
+console.log(`From selling Fuji, you will make $${fujiProfit}`);
+let galaProfit = galaPounds * galaPrice;
+console.log(`From selling Gala, you will make $${galaProfit}`);
+let pinkProfit = pinkPounds * pinkPrice;
+console.log(`From selling Pink, you will make $${pinkProfit}`);
 
 
 
